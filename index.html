@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="AFYX — pengalaman digital moden dengan identiti yang berani.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icon-192.png">
+<title>AFYX — Digital Experience</title>
+<style>
+:root{--bg:#050505;--card:#0d0d0f;--line:#252529;--text:#f5f5f5;--muted:#a2a2aa;--accent:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% -10%,#202024 0,#09090a 32%,#050505 65%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(5,5,5,.65);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between}.brand img{width:112px;display:block}.navlinks{display:flex;gap:26px;font-size:14px;color:#bbb}.navlinks a:hover{color:#fff}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:130px 0 80px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:#fff;filter:blur(180px);opacity:.08;top:22%;left:50%;transform:translateX(-50%)}
+.hero img{width:min(330px,70vw);position:relative;filter:drop-shadow(0 0 35px rgba(255,255,255,.13));animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}h1{font-size:clamp(50px,10vw,110px);line-height:.9;margin:35px 0 18px;letter-spacing:-.07em} .tag{color:#aaa;font-size:clamp(16px,2vw,21px);max-width:700px;margin:auto;line-height:1.65}
+.cta{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{padding:14px 22px;border:1px solid #333;border-radius:999px;font-weight:700;font-size:14px;transition:.25s}.btn.primary{background:#fff;color:#000;border-color:#fff}.btn:hover{transform:translateY(-3px);border-color:#fff}
+section{padding:105px 0}.eyebrow{font-size:12px;letter-spacing:.18em;color:#888;text-transform:uppercase}.title{font-size:clamp(34px,5vw,58px);letter-spacing:-.04em;margin:12px 0 20px}.lead{color:#aaa;line-height:1.75;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}.card{background:linear-gradient(145deg,#111113,#09090a);border:1px solid var(--line);border-radius:24px;padding:28px;min-height:210px;transition:.3s}.card:hover{transform:translateY(-6px);border-color:#555}.num{font-size:13px;color:#777}.card h3{font-size:21px;margin:30px 0 10px}.card p{color:#999;line-height:1.65;margin:0}
+.download{border:1px solid #29292d;border-radius:30px;padding:48px;background:linear-gradient(135deg,#111,#080808);display:flex;justify-content:space-between;align-items:center;gap:30px}.download .cta{margin:0}
+footer{border-top:1px solid #1b1b1e;padding:35px 0;color:#777;font-size:13px;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){.navlinks{display:none}.grid{grid-template-columns:1fr}.download{display:block}.download .cta{justify-content:flex-start;margin-top:24px}section{padding:80px 0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navin"><a class="brand" href="#"><img src="assets/afyx-logo.png" alt="AFYX"></a><div class="navlinks"><a href="#tentang">Tentang</a><a href="#ciri">Ciri</a><a href="#download">Muat Turun</a></div></div></nav>
+
+<header class="hero">
+<div class="wrap">
+<img src="assets/afyx-logo.png" alt="AFYX logo">
+<h1>AFYX</h1>
+<p class="tag">Pengalaman digital yang ringkas, moden dan berani — dibina dengan identiti visual AFYX.</p>
+<div class="cta"><a class="btn primary" href="#download">GET THE APP</a><a class="btn" href="#tentang">EXPLORE</a></div>
+</div>
+</header>
+
+<section id="tentang"><div class="wrap">
+<div class="eyebrow">01 / Tentang</div><h2 class="title">Direka untuk pengalaman yang lebih clean.</h2>
+<p class="lead">AFYX membawa kandungan projek anda ke dalam satu pengalaman digital yang kemas. Reka bentuk hitam minimal, tipografi besar dan interaksi pantas menjadikan aplikasi ini nampak premium pada telefon dan desktop.</p>
+</div></section>
+
+<section id="ciri"><div class="wrap">
+<div class="eyebrow">02 / Ciri Utama</div><h2 class="title">Simple. Fast. AFYX.</h2>
+<div class="grid">
+<div class="card"><div class="num">01</div><h3>Modern Interface</h3><p>Antaramuka gelap dengan susun atur yang fokus pada kandungan dan pengalaman pengguna.</p></div>
+<div class="card"><div class="num">02</div><h3>Responsive</h3><p>Direka supaya kelihatan kemas pada skrin telefon, tablet dan komputer.</p></div>
+<div class="card"><div class="num">03</div><h3>PWA Ready</h3><p>Boleh dipasang sebagai Progressive Web App apabila laman dihoskan melalui HTTPS.</p></div>
+</div></div></section>
+
+<section id="download"><div class="wrap"><div class="download">
+<div><div class="eyebrow">03 / Download</div><h2 class="title" style="margin-bottom:8px">Bawa AFYX bersama anda.</h2><p class="lead">Pilih versi yang sesuai. PWA boleh terus dibuka di browser; APK disediakan sebagai ruang pautan apabila fail Android sebenar sudah tersedia.</p></div>
+<div class="cta">
+<a class="btn primary" href="pwa/" target="_blank">OPEN PWA</a>
+<a class="btn" href="APK_LINK.txt">APK LINK</a>
+</div>
+</div></div></section>
+
+<footer class="wrap"><span>© 2026 AFYX</span><span>Designed by Afief</span></footer>
+<script>
+if("serviceWorker" in navigator){navigator.serviceWorker.register("service-worker.js").catch(()=>{});}
+</script>
+</body></html>
